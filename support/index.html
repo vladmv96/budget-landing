@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Support — SharedBudget</title>
+<meta name="description" content="Contact SharedBudget support for account, billing, and app questions." />
+<meta name="theme-color" content="#6C6CE5" />
+<meta name="robots" content="index,follow" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<style>
+  :root{
+    --bg:#EEEFF8;
+    --bg-2:#F7F8FC;
+    --ink:#0F1024;
+    --ink-2:#3B3D55;
+    --ink-3:#6E7088;
+    --line:#E1E3F0;
+    --grad-a:#C95BD0;
+    --grad-b:#6C6CE5;
+    --accent:#6C6CE5;
+    --card:#FFFFFF;
+    --shadow:0 6px 24px rgba(20,18,60,0.08);
+    --shadow-lg:0 22px 60px rgba(60,40,140,0.16);
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.65;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{width:100%;max-width:1120px;margin:0 auto;padding:0 24px}
+
+  header{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:saturate(160%) blur(14px);
+    -webkit-backdrop-filter:saturate(160%) blur(14px);
+    background:rgba(238,239,248,0.78);
+    border-bottom:1px solid rgba(225,227,240,0.6);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    padding:14px 0;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink)}
+  .brand:hover{text-decoration:none}
+  .brand-mark{
+    width:32px;
+    height:32px;
+    border-radius:8px;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+    background:transparent;
+  }
+  .nav-links{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--ink-2)}
+  .nav-links a{color:var(--ink-2)}
+  .back{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:8px 14px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    background:#fff;
+    color:var(--ink-2);
+    font-size:13px;
+    font-weight:500;
+  }
+  .back:hover{text-decoration:none;color:var(--ink)}
+
+  .support{
+    position:relative;
+    overflow:hidden;
+    padding:72px 0 88px;
+  }
+  .support::before{
+    content:"";
+    position:absolute;
+    top:-120px;
+    right:-140px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(closest-side,rgba(201,91,208,0.36),rgba(201,91,208,0) 72%);
+    filter:blur(14px);
+  }
+  .support::after{
+    content:"";
+    position:absolute;
+    left:-120px;
+    bottom:-140px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(closest-side,rgba(108,108,229,0.28),rgba(108,108,229,0) 72%);
+    filter:blur(14px);
+  }
+  .support-grid{
+    position:relative;
+    z-index:1;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(320px,460px);
+    gap:28px;
+    align-items:start;
+  }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:6px 12px;
+    border-radius:999px;
+    background:rgba(255,255,255,0.72);
+    border:1px solid var(--line);
+    font-size:13px;
+    color:var(--ink-2);
+    font-weight:500;
+  }
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  h1{
+    font-size:clamp(36px,5vw,56px);
+    line-height:1.06;
+    letter-spacing:-0.025em;
+    margin:18px 0 14px;
+    font-weight:800;
+  }
+  .grad{
+    background:linear-gradient(135deg,var(--grad-a),var(--grad-b));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .lead{
+    max-width:620px;
+    font-size:18px;
+    color:var(--ink-2);
+    margin:0 0 22px;
+  }
+  .chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .chip{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 12px;
+    background:rgba(255,255,255,0.72);
+    border:1px solid var(--line);
+    border-radius:10px;
+    font-size:12px;
+    color:var(--ink-2);
+  }
+
+  .support-card,
+  .info-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+  .support-card{padding:28px;box-shadow:var(--shadow-lg)}
+  .card-kicker{
+    font-size:13px;
+    font-weight:600;
+    color:var(--accent);
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    margin:0 0 10px;
+  }
+  .support-card h2,
+  .info-card h2{
+    font-size:28px;
+    line-height:1.12;
+    letter-spacing:-0.02em;
+    margin:0 0 10px;
+    font-weight:800;
+  }
+  .support-card p,
+  .info-card p,
+  .info-card li{
+    color:var(--ink-2);
+    font-size:15.5px;
+  }
+  .email-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin:16px 0 14px;
+    padding:14px 18px;
+    border-radius:14px;
+    background:var(--ink);
+    color:#fff;
+    font-weight:600;
+    box-shadow:var(--shadow);
+  }
+  .email-link:hover{text-decoration:none;opacity:0.94}
+  .mini-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin:22px 0;
+  }
+  .mini-card{
+    padding:16px;
+    border-radius:14px;
+    background:var(--bg-2);
+    border:1px solid var(--line);
+  }
+  .mini-card strong{
+    display:block;
+    margin-bottom:6px;
+    color:var(--ink);
+    font-size:14px;
+  }
+  .mini-card p{margin:0;font-size:14px}
+  .link-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:18px;
+  }
+  .link-chip{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 14px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    background:#fff;
+    color:var(--ink);
+    font-size:14px;
+    font-weight:500;
+  }
+  .link-chip:hover{text-decoration:none;background:var(--bg-2)}
+
+  .details{padding:0 0 88px}
+  .details-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+  }
+  .info-card{padding:28px}
+  .info-card ul{margin:14px 0 0;padding-left:20px}
+  .info-card li{margin-bottom:8px}
+
+  footer{padding:0 0 64px;color:var(--ink-3);font-size:14px}
+  .foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap}
+  .foot-links a{color:var(--ink-2)}
+
+  @media(max-width:880px){
+    .support-grid,
+    .details-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:640px){
+    .container{padding-left:16px;padding-right:16px}
+    .foot{padding-left:16px;padding-right:16px}
+    .nav{padding-left:0;padding-right:0}
+    .nav-links a:not(.back){display:none}
+    .support{padding-top:56px}
+    .support-card,
+    .info-card{padding:22px}
+    .mini-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="/" class="brand">
+      <span class="brand-mark"><img src="/favicon.png" alt="SharedBudget app icon" width="32" height="32" /></span>
+      SharedBudget
+    </a>
+    <div class="nav-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/" class="back">Back to home</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="support">
+    <div class="container support-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> SharedBudget support</span>
+        <h1>Get help without the <span class="grad">runaround</span>.</h1>
+        <p class="lead">Use this page for account questions, sync issues, subscription help, or anything else related to SharedBudget. We handle support by email.</p>
+        <div class="chips">
+          <span class="chip">Email support</span>
+          <span class="chip">App Store and Google Play issues</span>
+          <span class="chip">Privacy-first product</span>
+        </div>
+      </div>
+
+      <article class="support-card">
+        <p class="card-kicker">Contact</p>
+        <h2>Write to support</h2>
+        <p>The fastest way to reach us is email. If your issue is account-specific, include the email tied to your SharedBudget account and a short description of what happened.</p>
+        <a class="email-link" href="mailto:merbelcorp@outlook.com">merbelcorp@outlook.com</a>
+        <div class="mini-grid">
+          <div class="mini-card">
+            <strong>Billing and subscriptions</strong>
+            <p>Mention whether the purchase was made through Apple App Store or Google Play.</p>
+          </div>
+          <div class="mini-card">
+            <strong>Sync or account issues</strong>
+            <p>Include your device, OS version, and the last step before the issue appeared.</p>
+          </div>
+        </div>
+        <div class="link-row">
+          <a class="link-chip" href="/privacy/">Privacy Policy</a>
+          <a class="link-chip" href="/terms/">Terms of Use</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="details">
+    <div class="container details-grid">
+      <article class="info-card">
+        <p class="card-kicker">Before you write</p>
+        <h2>What helps us reply faster</h2>
+        <ul>
+          <li>Describe the issue in one or two sentences first.</li>
+          <li>Add screenshots only if they clarify the problem.</li>
+          <li>Tell us whether the issue happens on iPhone, iPad, or Android.</li>
+          <li>Mention if the problem affects a shared wallet or a single account.</li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <p class="card-kicker">Useful links</p>
+        <h2>Policy and account context</h2>
+        <p>If your request is about data handling, subscriptions, or account removal, these pages usually answer the legal side of it before support is needed.</p>
+        <div class="link-row">
+          <a class="link-chip" href="/">Home</a>
+          <a class="link-chip" href="/privacy/">Privacy Policy</a>
+          <a class="link-chip" href="/terms/">Terms of Use</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div class="brand">
+      <span class="brand-mark"><img src="/favicon.png" alt="SharedBudget app icon" width="32" height="32" /></span>
+      SharedBudget
+    </div>
+    <div class="foot-links">
+      <a href="/">Home</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Use</a>
+    </div>
+    <div>© 2026 Vladislav Mershkov</div>
+  </div>
+</footer>
+
+</body>
+</html>
