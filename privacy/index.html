@@ -202,8 +202,16 @@
       </ul>
       <p>Push tokens are used only to deliver notifications you have enabled. You can disable notifications at any time in your device settings.</p>
 
-      <h3>2.7 Technical data</h3>
-      <p>We do not use any third-party analytics SDK, crash reporting SDK, advertising SDK, or tracking SDK. We do not collect your IP address, device advertising ID, location, contacts, photos, or microphone data.</p>
+      <h3>2.7 Feedback</h3>
+      <p>When you submit feedback through the in-app feedback form, we collect:</p>
+      <ul>
+        <li>Free-form text you write in the feedback message</li>
+        <li>Optional email address (if you provide one so we can reply with support)</li>
+        <li>Optional screenshots (up to 3 images) that you choose to attach</li>
+      </ul>
+
+      <h3>2.8 Technical data</h3>
+      <p>We do not use third-party analytics SDKs, crash reporting SDKs, or tracking SDKs. We use RevenueCat to manage subscriptions and, when applicable, to measure attribution from Apple Search Ads campaigns through Apple's privacy-preserving AdServices API. We do not engage in cross-app or cross-website tracking. We do not collect your IP address, device advertising ID, location, contacts, photos, or microphone data.</p>
       <p>Standard server logs may temporarily contain your IP address for security and abuse prevention; these logs are automatically rotated and are not used to profile you.</p>
 
       <h2 id="s3">3. How we use your data</h2>
@@ -235,13 +243,17 @@
           <tr><td>RevenueCat</td><td>Subscription management</td><td>Pseudonymous user ID, subscription events</td><td>United States</td></tr>
           <tr><td>CurrencyLayer (apilayer)</td><td>Exchange rate lookups</td><td>Currency codes only (no personal data)</td><td>Global</td></tr>
           <tr><td>OpenAI</td><td>Auto-categorization of transactions during CSV import only</td><td>The name/description text of transactions you are importing</td><td>United States</td></tr>
+          <tr><td>Apple Search Ads Attribution (AdServices)</td><td>Measuring effectiveness of Apple Search Ads campaigns</td><td>Attribution token (no personally identifiable information)</td><td>United States</td></tr>
         </tbody>
       </table>
 
-      <h3>4.1 About OpenAI</h3>
+      <h3>4.1 About Apple Search Ads Attribution (AdServices)</h3>
+      <p>When you install the app from an Apple Search Ads campaign, Apple provides us with an attribution token that we forward to RevenueCat to measure ad campaign effectiveness. This token is available only for 30 days after installation. No personally identifiable information is shared through this mechanism. This is not used for cross-app tracking and does not require the App Tracking Transparency prompt.</p>
+
+      <h3>4.2 About OpenAI</h3>
       <p>When you import transactions from a CSV file, SharedBudget sends the transaction description text to OpenAI in order to suggest a category. We do not send your identity, email, account balance, or any other personally identifying information in this request. OpenAI processes the request under their API data usage policy and does not use this data to train their models (per OpenAI's API Terms). If you do not want this feature to be used, simply do not import CSV files.</p>
 
-      <h3>4.2 International data transfers</h3>
+      <h3>4.3 International data transfers</h3>
       <p>Some processors (Apple, Google, RevenueCat, OpenAI, and parts of Railway) are based in the United States. Where we transfer personal data outside the EU/EEA, such transfers are covered by the EU Standard Contractual Clauses (SCCs) and/or equivalent safeguards offered by the respective processor.</p>
 
       <h2 id="s5">5. Data sharing</h2>
