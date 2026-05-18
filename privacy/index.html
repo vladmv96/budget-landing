@@ -111,9 +111,9 @@
     <span class="eyebrow">Legal</span>
     <h1>Privacy <span class="grad">Policy</span></h1>
     <div class="meta">
-      <span>Last updated: April 24, 2026</span>
+      <span>Last updated: May 18, 2026</span>
       <span>·</span>
-      <span>Effective: April 24, 2026</span>
+      <span>Effective: May 18, 2026</span>
     </div>
 
     <p class="lead">This Privacy Policy explains how SharedBudget (the "App", "we", "us", "our") collects, uses, stores, and protects your information when you use our mobile application. The App is published on the App Store and Google Play by Vladislav Mershkov (sole developer, acting as a natural person), the "Data Controller". This policy is written to be compliant with the EU General Data Protection Regulation (GDPR) and includes a dedicated section for California residents (CCPA / CPRA). If you have questions, contact <a href="mailto:merbelcorp@outlook.com">merbelcorp@outlook.com</a>.</p>
@@ -211,8 +211,25 @@
       </ul>
 
       <h3>2.8 Technical data</h3>
-      <p>We do not use third-party analytics SDKs, crash reporting SDKs, or tracking SDKs. We use RevenueCat to manage subscriptions and, when applicable, to measure attribution from Apple Search Ads campaigns through Apple's privacy-preserving AdServices API. We do not engage in cross-app or cross-website tracking. We do not collect your IP address, device advertising ID, location, contacts, photos, or microphone data.</p>
+      <p>The only analytics we use are described in §2.9 below. We use RevenueCat to manage subscriptions and, when applicable, to measure attribution from Apple Search Ads campaigns through Apple's privacy-preserving AdServices API. We do not engage in cross-app or cross-website tracking. We do not collect your IDFA (Apple advertising identifier), location, contacts, photos, or microphone data.</p>
       <p>Standard server logs may temporarily contain your IP address for security and abuse prevention; these logs are automatically rotated and are not used to profile you.</p>
+
+      <h3>2.9 Analytics data</h3>
+      <p>To understand how the app is used and improve product decisions, we use <strong>Google Firebase Analytics</strong>. Firebase collects on our behalf:</p>
+      <ul>
+        <li>An anonymous Firebase Installation ID (not your Apple/Google <em>sub</em> claim);</li>
+        <li>Your user ID (the same id used to log you in) — to deduplicate sessions across reinstalls;</li>
+        <li>Product interaction events: app open, login, screen views, taps on key actions (creating a transaction, opening the paywall, completing or cancelling a purchase, changing language);</li>
+        <li>A non-tracking subset of device information automatically collected by the Firebase SDK (device model, OS version, language, country, app version, time zone).</li>
+      </ul>
+      <p>We do <strong>not</strong> send to Firebase:</p>
+      <ul>
+        <li>Transaction amounts, names, categories, account balances or any financial values;</li>
+        <li>Email addresses, user names or other personal identifiers beyond the user ID;</li>
+        <li>The IDFA (Apple advertising identifier) — we have explicitly disabled ad-id collection in the SDK configuration.</li>
+      </ul>
+      <p>Firebase Analytics data is processed by Google LLC under Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>. We do not use this data for advertising or share it with third parties for advertising purposes.</p>
+      <p>You can request deletion of your analytics data by contacting us at <a href="mailto:merbelcorp@outlook.com">merbelcorp@outlook.com</a> — we will reset your Firebase Analytics user ID and ask Google to delete the associated records.</p>
 
       <h2 id="s3">3. How we use your data</h2>
       <p>We use your data only for the following purposes:</p>
@@ -224,6 +241,7 @@
           <tr><td>Sharing data between members of a shared account</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
           <tr><td>Validating and managing your subscription</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
           <tr><td>Sending push notifications you enabled</td><td>Consent (Art. 6(1)(a)) — withdraw any time</td></tr>
+          <tr><td>Measuring product usage via Firebase Analytics (see §2.9)</td><td>Legitimate interest (Art. 6(1)(f)) — to improve the App; you may object at any time</td></tr>
           <tr><td>Auto-suggesting categories during CSV import (via OpenAI)</td><td>Legitimate interest (Art. 6(1)(f)) and/or your explicit action of importing a file</td></tr>
           <tr><td>Converting between currencies (via CurrencyLayer)</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
           <tr><td>Security, fraud prevention, abuse mitigation</td><td>Legitimate interest (Art. 6(1)(f))</td></tr>
@@ -239,7 +257,7 @@
           <tr><td>Supabase (PostgreSQL hosting)</td><td>Primary database</td><td>All account, profile, and financial data</td><td>AWS EU-West-3 (Paris, France / EU)</td></tr>
           <tr><td>Railway</td><td>Backend hosting</td><td>Application traffic, processed data</td><td>United States / EU (depending on region)</td></tr>
           <tr><td>Apple</td><td>Sign-in with Apple, App Store, APNs</td><td>OAuth identifier, push token</td><td>United States</td></tr>
-          <tr><td>Google</td><td>Sign-in with Google, FCM</td><td>OAuth identifier, push token</td><td>United States / Global</td></tr>
+          <tr><td>Google LLC</td><td>Sign-in with Google (Android), Firebase Cloud Messaging (Android push notifications), Firebase Analytics (product usage analytics)</td><td>OAuth identifier, push token, anonymous Firebase Installation ID, user ID, product interaction events, non-tracking device info</td><td>United States / Global</td></tr>
           <tr><td>RevenueCat</td><td>Subscription management</td><td>Pseudonymous user ID, subscription events</td><td>United States</td></tr>
           <tr><td>CurrencyLayer (apilayer)</td><td>Exchange rate lookups</td><td>Currency codes only (no personal data)</td><td>Global</td></tr>
           <tr><td>OpenAI</td><td>Auto-categorization of transactions during CSV import only</td><td>The name/description text of transactions you are importing</td><td>United States</td></tr>
@@ -286,6 +304,7 @@
         <li><strong>Right to withdraw consent</strong> at any time, where processing is based on consent (e.g., push notifications)</li>
         <li><strong>Right to lodge a complaint</strong> with your local Data Protection Authority</li>
       </ul>
+      <p>These rights apply to all personal data we process, including the analytics data described in §2.9. In particular, you may object to analytics processing or request deletion of your Firebase Analytics records by emailing us at <a href="mailto:merbelcorp@outlook.com">merbelcorp@outlook.com</a> — we will reset your Firebase Analytics user ID and ask Google to delete the associated records.</p>
       <p>To exercise any of these rights, email us at <a href="mailto:merbelcorp@outlook.com">merbelcorp@outlook.com</a>. We will respond within 30 days.</p>
 
       <h2 id="s8">8. Your rights (California residents — CCPA / CPRA)</h2>
@@ -323,7 +342,7 @@
       Privacy Policy URL: <a href="/privacy/">/privacy/</a></p>
 
       <hr/>
-      <p style="color:var(--ink-3);font-size:14px;margin:0">This Privacy Policy was last updated on April 24, 2026.</p>
+      <p style="color:var(--ink-3);font-size:14px;margin:0">This Privacy Policy was last updated on May 18, 2026.</p>
     </article>
   </div>
 </main>
