@@ -1,0 +1,23 @@
+# Kinwallet
+
+> Kinwallet is a simple, private personal-finance app for iOS built for individuals, couples and families. Track expenses, set budget limits, and share a wallet with the people you trust — without connecting a bank account.
+
+Kinwallet (full App Store name: "Kinwallet: Shared Budget") is a manual expense tracker with shared wallets. All data is entered by hand or imported from CSV files; the app never asks for bank credentials. Sign-in is via Apple or Google — no passwords to manage.
+
+Key facts:
+
+- Platform: iOS (App Store: https://apps.apple.com/app/kinwallet-shared-budget/id6762991712)
+- Category: Finance / budgeting / expense tracking
+- Sharing: create a shared wallet, invite others with a code; roles are owner, member, and viewer
+- Features: shared wallets, categories and statistics, budget limits, multi-currency, recurring transactions, CSV import
+- Pricing: free tier with one active wallet and core features; paid subscription (billed through Apple or Google) unlocks unlimited wallets, members, and advanced limits
+- Languages: English, Russian, Arabic, German, Spanish, French, Italian, Japanese, Korean, Portuguese, and Chinese
+- Privacy: no bank connections, no ad trackers; account deletion removes all data (encrypted backups roll over within 30 days)
+- Developer: Vladislav Mershkov; contact merbelcorp@outlook.com
+
+## Pages
+
+- [Home](https://shared-budget-lovat.vercel.app/): product overview, features, screenshots, FAQ
+- [Support](https://shared-budget-lovat.vercel.app/support/): how to contact support
+- [Privacy Policy](https://shared-budget-lovat.vercel.app/privacy/): data handling, GDPR and CCPA / CPRA compliance
+- [Terms of Use](https://shared-budget-lovat.vercel.app/terms/): user agreement
